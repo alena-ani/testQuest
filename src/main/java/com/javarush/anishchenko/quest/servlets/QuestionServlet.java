@@ -1,5 +1,6 @@
 package com.javarush.anishchenko.quest.servlets;
 import com.javarush.anishchenko.quest.model.Question;
+import com.javarush.anishchenko.quest.provider.QuestProvider;
 import com.javarush.anishchenko.quest.service.QuestService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,7 +23,7 @@ public class QuestionServlet extends HttpServlet {
     public void init() throws ServletException {
         LOGGER.debug("{} initialization", QuestionServlet.class.getName());
         super.init();
-        this.questService = new QuestService();
+        this.questService = new QuestService(new QuestProvider());
     }
 
     @Override

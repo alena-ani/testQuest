@@ -8,17 +8,22 @@ import java.net.Inet4Address;
 import java.net.UnknownHostException;
 import java.util.List;
 
+import static com.javarush.anishchenko.quest.constants.QuestConstants.QUESTION_ID_PREFIX;
+
 public class QuestService {
 
-    public QuestService() {
+    private final QuestProvider questProvider;
+
+    public QuestService(final QuestProvider questProvider) {
+        this.questProvider = questProvider;
     }
 
     public Question getFirstQuestion() {
-        return QuestProvider.getQuestions().get(QuestProvider.QUESTION_ID_PREFIX + 1);
+        return questProvider.getQuestions().get(QUESTION_ID_PREFIX + 1);
     }
 
     public Question getQuestion(String id) {
-        return QuestProvider.getQuestions().get(id);
+        return questProvider.getQuestions().get(id);
     }
 
     public Question findNextQuestion(String currentQuestionId, String answerId) {
