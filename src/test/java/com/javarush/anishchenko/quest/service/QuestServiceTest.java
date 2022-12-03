@@ -1,5 +1,4 @@
 package com.javarush.anishchenko.quest.service;
-
 import com.javarush.anishchenko.quest.model.Question;
 import com.javarush.anishchenko.quest.provider.QuestProvider;
 import com.javarush.anishchenko.quest.storage.QuestionsStorage;
@@ -9,7 +8,6 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import static com.javarush.anishchenko.quest.constants.QuestConstants.ANSWER_ID_PREFIX;
@@ -64,3 +62,4 @@ public class QuestServiceTest {
         verify(questProvider).getQuestions();
     }
 }
+

@@ -8,3 +8,4 @@ public class Statistics {
     private String ipAddress;
     private int numberOfGames;
 }
+

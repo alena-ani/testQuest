@@ -61,7 +61,7 @@
     <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
-        <version>RELEASE</version>
+        <version>1.18.24</version>
         <scope>compile</scope>
     </dependency>
 
@@ -94,7 +94,7 @@
     </dependencies>
 
     <build>
-        <finalName>testQuest</finalName>
+        <finalName>ROOT</finalName>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <plugin>

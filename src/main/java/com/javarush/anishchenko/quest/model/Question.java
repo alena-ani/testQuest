@@ -22,3 +22,4 @@ public class Question implements Serializable {
 
     private boolean isLoose;
 }
+

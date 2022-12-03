@@ -14,3 +14,4 @@ public class Answer implements Serializable {
 
     Question nextQuestion;
 }
+

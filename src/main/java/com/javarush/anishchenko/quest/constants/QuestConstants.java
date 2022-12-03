@@ -10,3 +10,4 @@ public final class QuestConstants {
         throw new UnsupportedOperationException();
     }
 }
+

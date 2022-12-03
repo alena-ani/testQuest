@@ -50,3 +50,4 @@ public class WelcomeServlet extends HttpServlet {
         request.getSession(false).setAttribute("statistics", statistics);
     }
 }
+

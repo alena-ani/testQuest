@@ -49,3 +49,4 @@ public class QuestService {
         return statistics;
     }
 }
+
